@@ -201,6 +201,7 @@ Each individual idea can be cited by its `url` field, which points to the canoni
 
 ## Related
 
+* **[App Ideas From Reddit](https://github.com/theomarsoliman/app-ideas-from-reddit)**, companion dataset: 614 app ideas taken from real Reddit requests, each linking to the original thread
 * **[State of Indie Business Ideas 2026](https://businessideasdb.com/state-of-indie-business-ideas-2026?utm_source=github&utm_medium=dataset&utm_campaign=business-ideas-dataset)**, annual data report with full aggregates
 * **[SaaS Ideas](https://businessideasdb.com/saas-ideas?utm_source=github&utm_medium=dataset&utm_campaign=business-ideas-dataset)**, filtered SaaS subset with editorial commentary
 * **[Micro SaaS Ideas](https://businessideasdb.com/micro-saas-ideas?utm_source=github&utm_medium=dataset&utm_campaign=business-ideas-dataset)**, solo founder filtered subset (feasibility 7 or higher)
