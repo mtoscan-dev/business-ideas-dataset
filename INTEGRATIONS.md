@@ -250,6 +250,20 @@ Add to your agent's MCP config (Claude Desktop, Cursor, etc.). Then the agent ca
 
 ---
 
+## Obsidian / llm-wiki (personal knowledge base)
+
+Following Karpathy's [llm-wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) (an LLM incrementally builds and maintains a persistent Obsidian wiki, with an `/raw` folder of immutable curated sources that an ingest skill reads once and folds into entity/concept pages):
+
+```bash
+python3 cli/export_raw.py
+```
+
+Renders every entry in `data/ideas.json` as one raw source file in `raw/business-ideas/<slug>.md` - YAML frontmatter with the full BID schema (scores, category, tags, competitors, keyword/volume/growth) plus a plain-markdown body. These files carry no wikilinks or synthesis; that stays the ingest skill's job. Copy or symlink `raw/business-ideas/` into your vault's `/raw` folder and let your llm-wiki ingest skill do the rest.
+
+Re-run `export_raw.py` whenever `data/ideas.json` changes; treat `raw/business-ideas/` as a generated artifact, not something to hand-edit.
+
+---
+
 ## Privacy and attribution
 
 The BID dataset is MIT licensed. Use, modify, redistribute, build on top of.
